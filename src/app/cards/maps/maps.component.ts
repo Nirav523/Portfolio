@@ -28,10 +28,11 @@ export class MapsComponent implements OnInit {
       this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(cachedUrl);
     } else {
       // The URL you want to cache and use
-      const url = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6168395549!2d75.780411!3d11.258753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65c931f9a983d%3A0x4c34b7f3e6b71fa2!2sKozhikode%2C%20Kerala%2C%20India!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus&zoom=12';
+      const url = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.1486045289672!2d72.49886300592046!3d23.1046067071009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9d6a2d465f93%3A0x556aa695584a0df6!2sShypram%20Parisar!5e1!3m2!1sen!2sin!4v1754377314428!5m2!1sen!2sin';
 
-      this.mapCacheService.setMapDetails(url);
-      this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+this.mapCacheService.setMapDetails(url);
+this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+
     }
   }
 }
